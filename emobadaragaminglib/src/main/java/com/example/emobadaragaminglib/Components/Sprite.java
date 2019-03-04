@@ -33,6 +33,7 @@ public class Sprite {
         this.y=y-height/2;
     }
     public boolean contain(int a,int b){
+        //TODO: Improve the accessibility here!
         if(x<=a && a<=(x+width) && y<=b && b<=(y+height) ) return true;
         return false;
     }

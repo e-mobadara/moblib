@@ -4,6 +4,9 @@ import android.content.res.Resources;
 import android.graphics.Paint;
 
 public interface Graphics {
+    /**
+     * ARGB8888 :
+     */
     public static enum ImageFormat {
         ARGB8888, ARGB4444, RGB565
     }
@@ -28,6 +31,13 @@ public interface Graphics {
 
     public int getHeight();
 
+    /**
+     * Fill the current space with a color using its ARGB code
+     * @param a : Alpha
+     * @param r : red (0-255)
+     * @param g : green (0-255)
+     * @param b : blue (0-255)
+     */
     public void drawARGB(int a, int r, int g, int b);
 
 }

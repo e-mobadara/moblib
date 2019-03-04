@@ -146,6 +146,7 @@ public class GameScreen extends Screen {
         super.handleDragging(x,y,pointer);
     }
 
+
     @Override
     public void render(float deltaTime) {
         Graphics g = game.getGraphics();
