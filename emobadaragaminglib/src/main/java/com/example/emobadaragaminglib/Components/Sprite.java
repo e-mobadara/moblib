@@ -10,20 +10,16 @@ public class Sprite {
     private int y;
     private int height;
     private int width;
-    private boolean isStatique=true;
+    private boolean isStatic =true;
+    private boolean isDragged;
 
-    private boolean isDraged;
-
-    //public Sprite(Game game,int idRessource, int x, int y, int height, int width) {
     public Sprite(Game game,Image image, int x, int y, int height, int width) {
-        //this.id = idRessource;
         this.x = x;
         this.y = y;
         this.height = height;
         this.width = width;
-        //this.image=game.getGraphics().newImage(idRessource, Graphics.ImageFormat.ARGB8888,game.getResources());
         this.image=image;
-        isDraged=false;
+        isDragged =false;
     }
     public void draw(Game game){
         game.getGraphics().drawImage(image,x,y,width,height);
@@ -42,25 +38,25 @@ public class Sprite {
         image.dispose();
     }
 
-    public boolean isDraged() {
-        return isDraged;
+    public boolean isDragged() {
+        return isDragged;
     }
 
-    public void setIsDraged(boolean draged) {
-        if(!isStatique)
-        isDraged = draged;
+    public void setDragged(boolean dragged) {
+        if(!isStatic)
+        isDragged = dragged;
     }
 
     public int getId() {
         return id;
     }
 
-    public boolean isStatique() {
-        return isStatique;
+    public boolean isStatic() {
+        return isStatic;
     }
 
-    public void setStatique(boolean statique) {
-        isStatique = statique;
+    public void setStatic(boolean aStatic) {
+        isStatic = aStatic;
     }
 
     public Image getImage() {

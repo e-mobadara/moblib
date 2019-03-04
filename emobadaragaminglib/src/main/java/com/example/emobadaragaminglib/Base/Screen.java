@@ -36,13 +36,13 @@ public abstract class Screen {
         // handle sprites created by screen
         for (Sprite s:sprites) {
             if(s.contain(x,y)){
-                s.setIsDraged(true);
+                s.setDragged(true);
                 dragedSprite=s;
                 Log.i("amine  TOUCH_DOWN   ",s.getId()+"  (x,y) = "+x+"  ,  "+y);
                 break;
             }
             else{
-                s.setIsDraged(false);
+                s.setDragged(false);
                 dragedSprite=null;
             }
         }
@@ -51,7 +51,7 @@ public abstract class Screen {
         // handle sprites created by screen
         for (Sprite s:sprites) {
             if(s.contain(x,y)){
-                s.setIsDraged(false);
+                s.setDragged(false);
                 dragedSprite=null;
                 Log.i("amine  TOUCH_UP   ",s.getId()+"  (x,y) = "+x+"  ,  "+y);
             }
@@ -61,7 +61,7 @@ public abstract class Screen {
     public void handleDragging(int x,int y, int pointer){
         // handle sprites created by screen
         for (Sprite s:sprites) {
-            if(s.isDraged()) {
+            if(s.isDragged()) {
                 s.setPosition(x,y);
                 Log.i("amine  DRAG   ",s.getId()+"  (x,y) = "+x+"  ,  "+y);
             }
@@ -83,7 +83,7 @@ public abstract class Screen {
         sprites.add(sprite);
     }
 
-    public Sprite getDragedSprite() {
+    public Sprite getDraggedSprite() {
         return dragedSprite;
     }
 }

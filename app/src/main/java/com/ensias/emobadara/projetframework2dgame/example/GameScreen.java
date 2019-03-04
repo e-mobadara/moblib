@@ -2,7 +2,6 @@ package com.ensias.emobadara.projetframework2dgame.example;
 
 import com.example.emobadaragaminglib.Base.Game;
 import com.example.emobadaragaminglib.Base.Graphics;
-import com.example.emobadaragaminglib.Base.Image;
 import com.example.emobadaragaminglib.Base.Screen;
 import com.example.emobadaragaminglib.Components.ButtonUI;
 import com.example.emobadaragaminglib.Components.Sprite;
@@ -83,7 +82,7 @@ public class GameScreen extends Screen {
         // Initialize game objects here
         /*mySprite=createNewSprite( R.drawable.lock_blue,0,0,70,70);
         mySprite2=createNewSprite(R.drawable.lock_green,0,70,70,70);
-        mySprite2.setStatique(false);
+        mySprite2.setStatic(false);
 
         Assets.music = game.getAudio().createMusic(R.raw.menutheme);
         Assets.music.play();*/
@@ -109,8 +108,8 @@ public class GameScreen extends Screen {
 
     @Override
     public void handleTouchUp(int x,int y, int pointer) {
-        if (getDragedSprite()!=null) {
-            if (conesContainer.checkAnneauIfIsInserted((Anneau) getDragedSprite()))  {
+        if (getDraggedSprite()!=null) {
+            if (conesContainer.checkAnneauIfIsInserted((Anneau) getDraggedSprite()))  {
                 if (conesContainer.nombreAnneauInsere==conesContainer.nombreTotalAnneau) termine=true;
                 // MyGdxGame.bravo.play();
 
@@ -118,11 +117,11 @@ public class GameScreen extends Screen {
             else {
                 // MyGdxGame.tryAgain.play();
                 stopGame=true;
-                stopedAnneau= (Anneau) getDragedSprite();
+                stopedAnneau= (Anneau) getDraggedSprite();
 
             }
 
-            //((Anneau)getDragedSprite()).isDraged=false;
+            //((Anneau)getDraggedSprite()).isDragged=false;
             //dragedAnneau=null;
             if (stopedAnneau==null)System.out.println("is null");
             else System.out.println("is not null");

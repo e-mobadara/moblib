@@ -17,7 +17,7 @@ public class Anneau  extends Sprite {
         //rectangle=new Rect(x,y,GameScreen.widthAnneau+x,GameScreen.widthAnneau-y);
         isDraged=false;
         isNotInserted=true;
-        setStatique(false);
+        setStatic(false);
     }
 
 }

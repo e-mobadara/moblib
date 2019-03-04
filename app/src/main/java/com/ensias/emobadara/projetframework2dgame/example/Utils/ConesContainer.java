@@ -69,8 +69,8 @@ public class ConesContainer {
                 anneau.isNotInserted=false;
                 anneau.setX(c.getX());
                 anneau.setY(c.getY());
-                anneau.setIsDraged(false);
-                anneau.setStatique(true);
+                anneau.setDragged(false);
+                anneau.setStatic(true);
 
                 nombreAnneauInsere++;
                 switch (anneau.type){

@@ -2,6 +2,9 @@ package com.example.emobadaragaminglib.Base;
 
 import java.util.List;
 
+/**
+ * this interface is used to map between the types of different events
+ */
 public interface Input {
 
     public static class TouchEvent {

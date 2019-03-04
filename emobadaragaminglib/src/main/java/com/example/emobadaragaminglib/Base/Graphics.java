@@ -5,7 +5,7 @@ import android.graphics.Paint;
 
 public interface Graphics {
     /**
-     * ARGB8888 :
+     * For more control over your images
      */
     public static enum ImageFormat {
         ARGB8888, ARGB4444, RGB565
