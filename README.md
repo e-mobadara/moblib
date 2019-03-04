@@ -25,8 +25,18 @@ dependencies {
 	}
 ```
 
+### Step 3: Add the Needed Permissions in your app manifest file
+To avoid the priorities that the Android System uses when merging the permissions in the library and the permissions of your app  see this document[document](https://developer.android.com/studio/build/manifest-merge.html "Document") we decided to let you add them in the manifest of your app to avoid any unwanted behaviors. 
+```
+<manifest>
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+    	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   	<uses-permission android:name="android.permission.VIBRATE" />
+</manifest>
+```
+
 ### Documentation 
-The documentation is still being written now. 
+The documentation is being written now. 
 
 ### Reporting issues:
 This is a beta release, So if you did encounter a bug please open an issue in the issues Session and provide the way to reproduce the bug or a link to your project. 
