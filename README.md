@@ -21,7 +21,7 @@ allprojects {
 ### Step 2: Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.e-mobadara:2d-game-lib:v1.0'
+		implementation 'com.github.e-mobadara:2d-game-lib:v1.1'
 	}
 ```
 
