@@ -26,7 +26,7 @@ dependencies {
 ```
 
 ### Step 3: Add the Needed Permissions in your app manifest file
-To avoid the priorities that the Android System uses when merging the permissions in the library and the permissions of your app  see this document[document](https://developer.android.com/studio/build/manifest-merge.html "Document") we decided to let you add them in the manifest of your app to avoid any unwanted behaviors. 
+To avoid the priorities that the Android System uses when merging the permissions in the library and the permissions of your app  see this [document](https://developer.android.com/studio/build/manifest-merge.html "Document") we decided to let you add them in the manifest of your app to avoid any unwanted behaviors. 
 ```
 <manifest>
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
