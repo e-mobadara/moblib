@@ -1,6 +1,9 @@
 # 2d-game-lib
 library for 2D android games
 
+## Structure
+[structure](https://raw.githubusercontent.com/e-mobadara/2d-game-lib/screenshots/structure.png)
+
 ## Requirements 
 - minSdkVersion 17
 - targetSdkVersion 28
