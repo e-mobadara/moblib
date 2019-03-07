@@ -11,9 +11,12 @@ import android.media.MediaPlayer.OnVideoSizeChangedListener;
 
 import com.example.emobadaragaminglib.Base.Music;
 
+/**
+ * AndroidMusic handles the background music that makes the Gaming experience more fun
+ */
 public class AndroidMusic implements Music, OnCompletionListener, OnSeekCompleteListener, OnPreparedListener, OnVideoSizeChangedListener {
-    MediaPlayer mediaPlayer;
-    boolean isPrepared = false;
+    private MediaPlayer mediaPlayer;
+    private boolean isPrepared;
 
     public AndroidMusic(AssetFileDescriptor assetDescriptor) {
         mediaPlayer = new MediaPlayer();
@@ -27,15 +30,14 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
             mediaPlayer.setOnSeekCompleteListener(this);
             mediaPlayer.setOnPreparedListener(this);
             mediaPlayer.setOnVideoSizeChangedListener(this);
-
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException("Couldn't load music");
         }
     }
 
     @Override
     public void dispose() {
-
         if (this.mediaPlayer.isPlaying()){
             this.mediaPlayer.stop();
         }
@@ -62,8 +64,6 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
         if (this.mediaPlayer.isPlaying())
             mediaPlayer.pause();
     }
-
-
 
     @Override
     public void play() {
@@ -95,12 +95,13 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
 
     @Override
     public void stop() {
-        if (this.mediaPlayer.isPlaying() == true){
+        if (this.mediaPlayer.isPlaying()){
             this.mediaPlayer.stop();
 
             synchronized (this) {
                 isPrepared = false;
-            }}
+            }
+        }
     }
 
     @Override
@@ -113,17 +114,14 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
     @Override
     public void seekBegin() {
         mediaPlayer.seekTo(0);
-
     }
 
 
     @Override
     public void onPrepared(MediaPlayer player) {
-        // TODO Auto-generated method stub
         synchronized (this) {
             isPrepared = true;
         }
-
     }
 
     @Override

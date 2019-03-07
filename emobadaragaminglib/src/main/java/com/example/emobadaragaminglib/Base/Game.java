@@ -47,7 +47,7 @@ public interface Game {
     public Screen getInitScreen();
 
     /**
-     * TODO
+     * TODO: Add
      * @return
      */
     Resources getResources();

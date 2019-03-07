@@ -33,7 +33,7 @@ public interface Graphics {
 
     /**
      * Fill the current space with a color using its ARGB code
-     * @param a : Alpha
+     * @param a : Alpha (0-255)
      * @param r : red (0-255)
      * @param g : green (0-255)
      * @param b : blue (0-255)
