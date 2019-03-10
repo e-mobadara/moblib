@@ -3,6 +3,10 @@ package com.example.emobadaragaminglib.Base;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A pool of objects that can be reused to avoid allocation.
+ * @param <T>
+ */
 public class Pool<T> {
     public interface PoolObjectFactory<T> {
         public T createObject();
