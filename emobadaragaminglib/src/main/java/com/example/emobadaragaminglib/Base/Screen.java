@@ -21,7 +21,6 @@ public abstract class Screen {
         sprites=new ArrayList<>();
     }
     private Sprite draggedSprite =null;
-    private ListIterator<Sprite> itr;
     // update & draw
     public abstract void render(float deltaTime);
 
@@ -46,16 +45,15 @@ public abstract class Screen {
      */
     public void handleTouchDown(int x,int y, int pointer){
         //Iterating backwards to Respect the order of sprites
-        itr = sprites.listIterator(sprites.size());
-        while(itr.hasPrevious()) {
-            if(itr.previous().contain(x,y)){
-                itr.previous().setDragged(true);
-                draggedSprite =itr.previous();
-                Log.i("TOUCH_DOWN   ",itr.previous().getId()+"  (x,y) = "+x+"  ,  "+y);
+        for(int i=sprites.size()-1;i>=0;i--) {
+            if(sprites.get(i).contain(x,y)){
+                sprites.get(i).setDragged(true);
+                draggedSprite =sprites.get(i);
+                Log.i("TOUCH_DOWN   ",sprites.get(i).getId()+"  (x,y) = "+x+"  ,  "+y);
                 break;
             }
             else{
-                itr.previous().setDragged(false);
+                sprites.get(i).setDragged(false);
                 draggedSprite =null;
             }
         }
@@ -69,14 +67,12 @@ public abstract class Screen {
      */
     public void handleTouchUp(int x,int y, int pointer){
         //Iterating backwards to Respect the order of sprites
-        itr = sprites.listIterator(sprites.size());
-        while(itr.hasPrevious()) {
-            if(itr.previous().contain(x,y)){
-                itr.previous().setDragged(false);
+        for(int i=sprites.size()-1;i>=0;i--) {
+            if(sprites.get(i).contain(x,y)){
+                sprites.get(i).setDragged(false);
                 draggedSprite =null;
-                Log.i("TOUCH_UP   ",itr.previous().getId()+"  (x,y) = "+x+"  ,  "+y);
+                Log.i("TOUCH_UP   ",sprites.get(i).getId()+"  (x,y) = "+x+"  ,  "+y);
             }
-
         }
     }
 
@@ -89,11 +85,10 @@ public abstract class Screen {
      */
     public void handleDragging(int x,int y, int pointer){
         //Iterating backwards to Respect the order of sprites
-        itr = sprites.listIterator(sprites.size());
-        while(itr.hasPrevious()) {
-            if(itr.previous().isDragged()) {
-                itr.previous().setPosition(x,y);
-                Log.i("DRAG   ",itr.previous().getId()+"  (x,y) = "+x+"  ,  "+y);
+        for(int i=sprites.size()-1;i>=0;i--) {
+            if(sprites.get(i).isDragged()) {
+                sprites.get(i).setPosition(x,y);
+                Log.i("DRAG   ",sprites.get(i).getId()+"  (x,y) = "+x+"  ,  "+y);
             }
         }
     }
