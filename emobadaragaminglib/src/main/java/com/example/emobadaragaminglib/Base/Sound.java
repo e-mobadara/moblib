@@ -6,7 +6,14 @@ package com.example.emobadaragaminglib.Base;
  * use Music instead
  */
 public interface Sound {
+    /**
+     * play this Sound Object
+     * @param volume percentage of the volume from 0 to 1
+     */
     public void play(float volume);
 
+    /**
+     * Free the memory used by this object
+     */
     public void dispose();
 }

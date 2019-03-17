@@ -13,15 +13,15 @@ import com.example.emobadaragaminglib.Base.Pool.PoolObjectFactory;
 public class MultiTouchHandler implements TouchHandler {
     private static final int MAX_TOUCHPOINTS = 10;
 
-    boolean[] isTouched = new boolean[MAX_TOUCHPOINTS];
-    int[] touchX = new int[MAX_TOUCHPOINTS];
-    int[] touchY = new int[MAX_TOUCHPOINTS];
+    private boolean[] isTouched = new boolean[MAX_TOUCHPOINTS];
+    private int[] touchX = new int[MAX_TOUCHPOINTS];
+    private int[] touchY = new int[MAX_TOUCHPOINTS];
     int[] id = new int[MAX_TOUCHPOINTS];
-    Pool<TouchEvent> touchEventPool;
-    List<TouchEvent> touchEvents = new ArrayList<TouchEvent>();
-    List<TouchEvent> touchEventsBuffer = new ArrayList<TouchEvent>();
-    float scaleX;
-    float scaleY;
+    private Pool<TouchEvent> touchEventPool;
+    private List<TouchEvent> touchEvents = new ArrayList<TouchEvent>();
+    private List<TouchEvent> touchEventsBuffer = new ArrayList<TouchEvent>();
+    private float scaleX;
+    private float scaleY;
 
     public MultiTouchHandler(View view, float scaleX, float scaleY) {
         PoolObjectFactory<TouchEvent> factory = new PoolObjectFactory<TouchEvent>() {

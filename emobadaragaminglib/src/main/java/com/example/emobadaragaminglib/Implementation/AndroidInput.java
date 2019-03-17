@@ -10,7 +10,7 @@ import com.example.emobadaragaminglib.Base.Input;
 
 
 public class AndroidInput implements Input {
-    TouchHandler touchHandler;
+    private TouchHandler touchHandler;
 
     public AndroidInput(Context context, View view, float scaleX, float scaleY) {
         if(Integer.parseInt(VERSION.SDK) < 5)
@@ -18,7 +18,6 @@ public class AndroidInput implements Input {
         else
             touchHandler = new MultiTouchHandler(view, scaleX, scaleY);
     }
-
 
     @Override
     public boolean isTouchDown(int pointer) {
@@ -34,8 +33,6 @@ public class AndroidInput implements Input {
     public int getTouchY(int pointer) {
         return touchHandler.getTouchY(pointer);
     }
-
-
 
     @Override
     public List<TouchEvent> getTouchEvents() {

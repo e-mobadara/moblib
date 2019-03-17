@@ -28,20 +28,21 @@ public interface Game {
     public Graphics getGraphics();
 
     /**
-     * TODO
+     * Change the Current Screen to a new one.
      * @param screen
      */
     public void setScreen(Screen screen);
 
     /**
-     * TODO
+     * Returns the current screen that is showing to the user.
      * @return
      */
     public Screen getCurrentScreen();
 
     /**
      * Get the screen that you initialize your views with.
-     * TODO: Add more description
+     * The First Screen that Shows when your AndroidGame Activity starts.
+     * It should not be null
      * @return
      */
     public Screen getInitScreen();

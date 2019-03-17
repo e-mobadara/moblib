@@ -7,7 +7,7 @@ import com.example.emobadaragaminglib.Base.Graphics.ImageFormat;
 
 public class AndroidImage implements Image {
     Bitmap bitmap;
-    ImageFormat format;
+    private ImageFormat format;
 
     public AndroidImage(Bitmap bitmap, ImageFormat format) {
         this.bitmap = bitmap;

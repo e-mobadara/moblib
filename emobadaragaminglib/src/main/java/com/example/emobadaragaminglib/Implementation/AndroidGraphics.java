@@ -18,12 +18,12 @@ import com.example.emobadaragaminglib.Base.Image;
 
 
 public class AndroidGraphics implements Graphics {
-    AssetManager assets;
-    Bitmap frameBuffer;
-    Canvas canvas;
-    Paint paint;
-    Rect srcRect = new Rect();
-    Rect dstRect = new Rect();
+    private AssetManager assets;
+    private Bitmap frameBuffer;
+    private Canvas canvas;
+    private Paint paint;
+    private Rect srcRect = new Rect();
+    private Rect dstRect = new Rect();
 
     public AndroidGraphics(AssetManager assets, Bitmap frameBuffer) {
         this.assets = assets;
@@ -50,8 +50,6 @@ public class AndroidGraphics implements Graphics {
         InputStream in = null;
         Bitmap bitmap = null;
         try {
-            //in = assets.open(fileName);
-            //bitmap = BitmapFactory.decodeStream(in, null, options);
             bitmap =BitmapFactory.decodeResource(res,id,options);
 
             if (bitmap == null)
@@ -100,8 +98,6 @@ public class AndroidGraphics implements Graphics {
     @Override
     public void drawString(String text, int x, int y, Paint paint){
         canvas.drawText(text, x, y, paint);
-
-
     }
 
 
@@ -111,7 +107,6 @@ public class AndroidGraphics implements Graphics {
         srcRect.top = srcY;
         srcRect.right = srcX + srcWidth;
         srcRect.bottom = srcY + srcHeight;
-
 
         dstRect.left = x;
         dstRect.top = y;
@@ -133,19 +128,15 @@ public class AndroidGraphics implements Graphics {
 
     public void drawScaledImage(Image Image, int x, int y, int width, int height, int srcX, int srcY, int srcWidth, int srcHeight){
 
-
         srcRect.left = srcX;
         srcRect.top = srcY;
         srcRect.right = srcX + srcWidth;
         srcRect.bottom = srcY + srcHeight;
 
-
         dstRect.left = x;
         dstRect.top = y;
         dstRect.right = x + width;
         dstRect.bottom = y + height;
-
-
 
         canvas.drawBitmap(((AndroidImage) Image).bitmap, srcRect, dstRect, null);
 

@@ -12,14 +12,14 @@ import com.example.emobadaragaminglib.Base.Input.TouchEvent;
 import com.example.emobadaragaminglib.Base.Pool.PoolObjectFactory;
 
 public class SingleTouchHandler implements TouchHandler {
-    boolean isTouched;
-    int touchX;
-    int touchY;
-    Pool<TouchEvent> touchEventPool;
-    List<TouchEvent> touchEvents = new ArrayList<TouchEvent>();
-    List<TouchEvent> touchEventsBuffer = new ArrayList<TouchEvent>();
-    float scaleX;
-    float scaleY;
+    private boolean isTouched;
+    private int touchX;
+    private int touchY;
+    private Pool<TouchEvent> touchEventPool;
+    private List<TouchEvent> touchEvents = new ArrayList<TouchEvent>();
+    private List<TouchEvent> touchEventsBuffer = new ArrayList<TouchEvent>();
+    private float scaleX;
+    private float scaleY;
 
     public SingleTouchHandler(View view, float scaleX, float scaleY) {
         PoolObjectFactory<TouchEvent> factory = new PoolObjectFactory<TouchEvent>() {

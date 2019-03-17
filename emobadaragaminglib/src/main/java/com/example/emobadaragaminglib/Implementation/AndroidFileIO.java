@@ -16,18 +16,15 @@ import android.preference.PreferenceManager;
 import com.example.emobadaragaminglib.Base.FileIO;
 
 public class AndroidFileIO implements FileIO {
-    Context context;
-    AssetManager assets;
-    String externalStoragePath;
+    private Context context;
+    private AssetManager assets;
+    private String externalStoragePath;
 
     public AndroidFileIO(Context context) {
         this.context = context;
         this.assets = context.getAssets();
         this.externalStoragePath = Environment.getExternalStorageDirectory()
                 .getAbsolutePath() + File.separator;
-
-
-
     }
 
     @Override

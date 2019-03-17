@@ -7,8 +7,10 @@ import java.util.List;
  * TODO: Implement the Touch_hold
  */
 public interface Input {
-
-    public static class TouchEvent {
+    /**
+     * Enumeration and Organization of Work
+     */
+    class TouchEvent {
         public static final int TOUCH_DOWN = 0;
         public static final int TOUCH_UP = 1;
         public static final int TOUCH_DRAGGED = 2;
@@ -17,8 +19,6 @@ public interface Input {
         public int type;
         public int x, y;
         public int pointer;
-
-
     }
 
     public boolean isTouchDown(int pointer);

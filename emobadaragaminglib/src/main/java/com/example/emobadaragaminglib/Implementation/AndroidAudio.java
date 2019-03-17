@@ -11,8 +11,8 @@ import com.example.emobadaragaminglib.Base.Music;
 import com.example.emobadaragaminglib.Base.Sound;
 
 public class AndroidAudio implements Audio {
-    Resources assets;
-    SoundPool soundPool;
+    private Resources assets;
+    private SoundPool soundPool;
 
     public AndroidAudio(Activity activity) {
         activity.setVolumeControlStream(AudioManager.STREAM_MUSIC);
