@@ -28,10 +28,18 @@ public abstract class Screen {
 
     public abstract void resume();
 
+    /**
+     * The Reason this Method is not doing anything is because When We dispose of the bitmaps
+     * We get the exception java.lang.RuntimeException:
+     * Canvas: trying to use a recycled bitmap android.graphics.Bitmap@d5316ab
+     * Which means we are trying to use the same resource twice. in two bitmaps.
+     * We will try to use a bitmap.copy in the future
+     * TODO: USE bitmap.copy instead of not disposing of the bitmaps.
+     */
     public void dispose(){
         //dispose
         for (Sprite s:sprites) {
-           // s.dispose();
+           //s.dispose();
         }
     }
 

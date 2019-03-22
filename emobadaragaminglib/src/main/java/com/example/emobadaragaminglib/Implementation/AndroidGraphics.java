@@ -100,7 +100,6 @@ public class AndroidGraphics implements Graphics {
         canvas.drawText(text, x, y, paint);
     }
 
-
     public void drawImage(Image Image, int x, int y, int srcX, int srcY,
                           int srcWidth, int srcHeight) {
         srcRect.left = srcX;

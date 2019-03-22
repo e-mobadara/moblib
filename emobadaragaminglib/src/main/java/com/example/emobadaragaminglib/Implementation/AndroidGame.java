@@ -21,6 +21,7 @@ import com.example.emobadaragaminglib.Base.Input;
 import com.example.emobadaragaminglib.Base.Screen;
 
 public abstract class AndroidGame extends Activity implements Game {
+    private static final String TAG = "AndroidGame";
     AndroidFastRenderView renderView;
     Graphics graphics;
     Audio audio;
@@ -39,32 +40,25 @@ public abstract class AndroidGame extends Activity implements Game {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         //get width & height
         screenWidth=Resources.getSystem().getDisplayMetrics().widthPixels;
         screenHeight=Resources.getSystem().getDisplayMetrics().heightPixels;
 
-        Log.i("amine  resolution   ","  (w,h) = "+screenWidth+"  ,  "+screenHeight);
+        Log.i(TAG,"  (w,h) = "+screenWidth+"  ,  "+screenHeight);
 
-        //boolean isPortrait = getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
-        //int frameBufferWidth = isPortrait ? 480: 800;
-        //int frameBufferHeight = isPortrait ? 800: 480;
-        //Bitmap frameBuffer = Bitmap.createBitmap(frameBufferWidth, frameBufferHeight, Config.RGB_565);
         Bitmap frameBuffer = Bitmap.createBitmap(screenWidth, screenHeight, Config.RGB_565);
-
-        //float scaleX = (float) frameBufferWidth / getWindowManager().getDefaultDisplay().getWidth();
-        //float scaleY = (float) frameBufferHeight / getWindowManager().getDefaultDisplay().getHeight();
 
         renderView = new AndroidFastRenderView(this, frameBuffer);
         graphics = new AndroidGraphics(getAssets(), frameBuffer);
         fileIO = new AndroidFileIO(this);
         audio = new AndroidAudio(this);
-        //input = new AndroidInput(this, renderView, scaleX, scaleY);
         input = new AndroidInput(this, renderView, 1, 1);
         screen = getInitScreen();
         setContentView(renderView);
 
         PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
-        //wakeLock = powerManager.newWakeLock(PowerManager.FULL_WAKE_LOCK, "MyGame");
+
         wakeLock = powerManager.newWakeLock(PowerManager.FULL_WAKE_LOCK, "MyGame");
     }
 
@@ -114,7 +108,6 @@ public abstract class AndroidGame extends Activity implements Game {
         this.screen.pause();
         this.screen.dispose();
         screen.resume();
-        //screen.update(0);
         this.screen = screen;
     }
 

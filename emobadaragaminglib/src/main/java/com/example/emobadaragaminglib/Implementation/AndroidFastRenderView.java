@@ -2,7 +2,11 @@ package com.example.emobadaragaminglib.Implementation;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -10,11 +14,14 @@ import com.example.emobadaragaminglib.Base.Input;
 
 import java.util.List;
 
+import static android.content.ContentValues.TAG;
+
 public class AndroidFastRenderView extends SurfaceView implements Runnable {
     AndroidGame game;
     Bitmap framebuffer;
     Thread renderThread = null;
     SurfaceHolder holder;
+    Paint paint;
     volatile boolean running = false;
 
     public AndroidFastRenderView(AndroidGame game, Bitmap framebuffer) {
@@ -22,7 +29,7 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable {
         this.game = game;
         this.framebuffer = framebuffer;
         this.holder = getHolder();
-
+        this.paint = new Paint();
     }
 
     public void resume() {
@@ -39,7 +46,6 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable {
             if(!holder.getSurface().isValid())
                 continue;
 
-
             float deltaTime = (System.nanoTime() - startTime) / 10000000.000f;
             startTime = System.nanoTime();
 
@@ -55,28 +61,24 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable {
                 Input.TouchEvent event = touchEvents.get(i);
                 if (event.type == Input.TouchEvent.TOUCH_DOWN) {
                     game.getCurrentScreen().handleTouchDown(event.x,event.y,event.pointer);
-
                 }
                 if (event.type == Input.TouchEvent.TOUCH_UP) {
                     game.getCurrentScreen().handleTouchUp(event.x,event.y,event.pointer);
-
                 }
                 if (event.type == Input.TouchEvent.TOUCH_DRAGGED) {
                     game.getCurrentScreen().handleDragging(event.x,event.y,event.pointer);
-
                 }
             }
         ///////////////////////////////:
+
             game.getCurrentScreen().render(deltaTime);
             game.getCurrentScreen().drawSprites();
 
-
             Canvas canvas = holder.lockCanvas();
             canvas.getClipBounds(dstRect);
-            canvas.drawBitmap(framebuffer, null, dstRect, null);
+            //redrawing all the bitmaps
+            canvas.drawBitmap(framebuffer, null, dstRect, paint);
             holder.unlockCanvasAndPost(canvas);
-
-
         }
     }
 

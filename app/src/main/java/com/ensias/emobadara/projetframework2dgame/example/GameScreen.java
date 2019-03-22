@@ -8,8 +8,11 @@ import com.example.emobadaragaminglib.Components.Sprite;
 import com.ensias.emobadara.projetframework2dgame.example.Utils.Anneau;
 import com.ensias.emobadara.projetframework2dgame.example.Utils.ConesContainer;
 
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.util.Log;
 
 
@@ -149,6 +152,7 @@ public class GameScreen extends Screen {
     @Override
     public void render(float deltaTime) {
         Graphics g = game.getGraphics();
+
         g.drawARGB(255, 0, 0, 0);
         /*g.drawRect(700, 380, 100, 100, Color.RED);
         g.drawString("Amine.", 100, 100, paint);
