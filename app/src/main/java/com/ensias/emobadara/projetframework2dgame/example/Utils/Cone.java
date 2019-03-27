@@ -9,8 +9,8 @@ public class Cone extends Sprite {
     public int type;
     //public Rect rectangle;
 
-    public Cone(Game game, Image image, int x, int y, int height, int width, int type) {
-        super(game, image, x, y, height, width);
+    public Cone( Image image, int x, int y, int height, int width, int type) {
+        super( image, x, y, height, width);
         this.type=type;
         //rectangle=new Rect(x-GameScreen.widthAnneau/5,y-GameScreen.widthAnneau/5,x+GameScreen.widthAnneau+2*GameScreen.widthAnneau/5,y-GameScreen.widthAnneau+2*GameScreen.widthAnneau/5);
 

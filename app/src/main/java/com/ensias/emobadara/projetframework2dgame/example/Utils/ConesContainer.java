@@ -36,13 +36,13 @@ public class ConesContainer {
                     int type = (Integer) iterator.next();
                     switch (type){
                         case 0:
-                            cones[index]=new Cone(game, Assets.imageConeRouge,x,y,GameScreen.widthAnneau,GameScreen.widthAnneau,0);
+                            cones[index]=new Cone( Assets.imageConeRouge,x,y,GameScreen.widthAnneau,GameScreen.widthAnneau,0);
                             break;
                         case 1:
-                            cones[index]=new Cone(game,Assets.imageConeBleu,x,y,GameScreen.widthAnneau,GameScreen.widthAnneau,1);
+                            cones[index]=new Cone(Assets.imageConeBleu,x,y,GameScreen.widthAnneau,GameScreen.widthAnneau,1);
                             break;
                         case 2:
-                            cones[index]=new Cone(game, Assets.imageConeVert,x,y,GameScreen.widthAnneau,GameScreen.widthAnneau,2);
+                            cones[index]=new Cone( Assets.imageConeVert,x,y,GameScreen.widthAnneau,GameScreen.widthAnneau,2);
                             break;
 
                     }

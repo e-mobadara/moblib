@@ -11,8 +11,8 @@ public class Anneau  extends Sprite {
     public boolean isDraged;
     public boolean isNotInserted;
 
-    public Anneau(Game game, Image image, int x, int y, int height, int width, int type) {
-        super(game, image, x, y, height, width);
+    public Anneau( Image image, int x, int y, int height, int width, int type) {
+        super( image, x, y, height, width);
         this.type=type;
         //rectangle=new Rect(x,y,GameScreen.widthAnneau+x,GameScreen.widthAnneau-y);
         isDraged=false;

@@ -112,7 +112,7 @@ public abstract class Screen {
      */
     public Sprite createNewSprite(Image image, int x, int y, int height, int width){
         Log.i("createNewSprite","id = ");
-        Sprite sprite= new Sprite( game,image, x,y, height, width);
+        Sprite sprite= new Sprite( image, x,y, height, width);
         this.sprites.add(sprite);
         return sprite;
     }

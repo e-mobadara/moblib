@@ -54,7 +54,7 @@ public class GameScreen extends Screen {
         if (nombreAnneauRouge!=0){
             anneausRouge=new Anneau[nombreAnneauRouge];
             for (int i=0 ;i<nombreAnneauRouge;i++){
-                anneausRouge[i]=new  Anneau(game,Assets.imageAnneauRouge,xAnneau,yAnneau,widthAnneau,widthAnneau,0);
+                anneausRouge[i]=new  Anneau(Assets.imageAnneauRouge,xAnneau,yAnneau,widthAnneau,widthAnneau,0);
                 addSprite(anneausRouge[i]);
             }
             Log.i("amine ","ANNEAU ROUGE CREE");
@@ -66,7 +66,7 @@ public class GameScreen extends Screen {
         if (nombreAnneauBleu!=0){
             anneausBleu=new Anneau[nombreAnneauBleu];
             for (int i=0 ;i<nombreAnneauBleu;i++){
-                anneausBleu[i]=new  Anneau(game,Assets.imageAnneauBleu,xAnneau,yAnneau,widthAnneau,widthAnneau,1);
+                anneausBleu[i]=new  Anneau(Assets.imageAnneauBleu,xAnneau,yAnneau,widthAnneau,widthAnneau,1);
                 addSprite(anneausBleu[i]);
             }
         }
@@ -75,7 +75,7 @@ public class GameScreen extends Screen {
         if (nombreAnneauVert!=0){
             anneausVert=new Anneau[nombreAnneauVert];
             for (int i=0 ;i<nombreAnneauVert;i++){
-                anneausVert[i]=new  Anneau(game,Assets.imageAnneauVert,xAnneau,yAnneau,widthAnneau,widthAnneau,2);
+                anneausVert[i]=new  Anneau(Assets.imageAnneauVert,xAnneau,yAnneau,widthAnneau,widthAnneau,2);
                 addSprite(anneausVert[i]);
             }
         }
@@ -91,7 +91,7 @@ public class GameScreen extends Screen {
         Assets.music = game.getAudio().createMusic(R.raw.menutheme);
         Assets.music.play();*/
 
-        buttonUI=new ButtonUI(game,Assets.imageButton,Assets.imageButtonClicked,game.getScreenWidth()-2*widthAnneau,widthAnneau,widthAnneau,2*widthAnneau);
+        buttonUI=new ButtonUI(Assets.imageButton,Assets.imageButtonClicked,game.getScreenWidth()-2*widthAnneau,widthAnneau,widthAnneau,2*widthAnneau);
                 // Defining a paint object
         paint = new Paint();
         paint.setTextSize(30);

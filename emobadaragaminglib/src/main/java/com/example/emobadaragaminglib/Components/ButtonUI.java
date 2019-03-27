@@ -11,8 +11,8 @@ public class ButtonUI extends Sprite {
     private Image imageNotClicked; //Image when the button is not clicked
     private boolean isClicked=false;
 
-    public ButtonUI(Game game, Image image,Image imageClicked, int x, int y, int height, int width) {
-        super(game, image, x, y, height, width);
+    public ButtonUI(Image image,Image imageClicked, int x, int y, int height, int width) {
+        super(image, x, y, height, width);
         this.imageClicked=imageClicked;
         this.imageNotClicked=getImage();
     }
