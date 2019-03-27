@@ -1,4 +1,4 @@
-# 2d-game-lib
+# MobLib
 library for 2D android games
 
 ## Structure
@@ -24,7 +24,7 @@ allprojects {
 ### Step 2: Add the dependency
 ```
 dependencies {
-		implementation 'com.github.e-mobadara:2d-game-lib:v1.2.1'
+		implementation 'com.github.e-mobadara:moblib:v1.2.1'
 	}
 ```
 
