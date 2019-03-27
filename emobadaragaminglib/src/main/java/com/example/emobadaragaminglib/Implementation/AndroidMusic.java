@@ -36,6 +36,9 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
         }
     }
 
+    /**
+     * Free the space used by this music
+     */
     @Override
     public void dispose() {
         if (this.mediaPlayer.isPlaying()){
@@ -88,6 +91,10 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
         mediaPlayer.setLooping(isLooping);
     }
 
+    /**
+     * change the volume
+     * @param volume Percentage of volume
+     */
     @Override
     public void setVolume(float volume) {
         mediaPlayer.setVolume(volume, volume);
@@ -104,6 +111,11 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
         }
     }
 
+    /**
+     * To avoid the 1st Frame problem where the Audio is being prepared
+     * This function waits for one frame and Solves that problem
+     * @param player
+     */
     @Override
     public void onCompletion(MediaPlayer player) {
         synchronized (this) {
@@ -111,11 +123,13 @@ public class AndroidMusic implements Music, OnCompletionListener, OnSeekComplete
         }
     }
 
+    /**
+     * Replay the Sound from the beginning
+     */
     @Override
     public void seekBegin() {
         mediaPlayer.seekTo(0);
     }
-
 
     @Override
     public void onPrepared(MediaPlayer player) {

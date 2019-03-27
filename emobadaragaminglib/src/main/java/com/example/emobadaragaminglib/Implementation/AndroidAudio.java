@@ -20,12 +20,24 @@ public class AndroidAudio implements Audio {
         this.soundPool = new SoundPool(20, AudioManager.STREAM_MUSIC, 0);
     }
 
+    /**
+     * Make an AndroidMusic Object
+     * see AndroidMusic for more info
+     * @param idRessource R.raw.my_music
+     * @return
+     */
     @Override
     public Music createMusic(int idRessource) {
         AssetFileDescriptor assetDescriptor = assets.openRawResourceFd(idRessource);
         return new AndroidMusic(assetDescriptor);
     }
 
+    /**
+     * Make an AndroidSound Object
+     * See AndroidSound for more info
+     * @param idRessource R.raw.my_sound
+     * @return
+     */
     @Override
     public Sound createSound(int idRessource) {
         AssetFileDescriptor assetDescriptor = assets.openRawResourceFd(idRessource);

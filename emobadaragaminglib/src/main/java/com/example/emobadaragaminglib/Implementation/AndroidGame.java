@@ -20,6 +20,9 @@ import com.example.emobadaragaminglib.Base.Graphics;
 import com.example.emobadaragaminglib.Base.Input;
 import com.example.emobadaragaminglib.Base.Screen;
 
+/**
+ * The Most important Class. The one Responsible for assigning the screen that is showing in the moment
+ */
 public abstract class AndroidGame extends Activity implements Game {
     private static final String TAG = "AndroidGame";
     AndroidFastRenderView renderView;
@@ -70,6 +73,9 @@ public abstract class AndroidGame extends Activity implements Game {
         renderView.resume();
     }
 
+    /**
+     * When the activity pauses the lock should be released (Your device can be locked after being AFK)
+     */
     @Override
     public void onPause() {
         super.onPause();
@@ -100,6 +106,10 @@ public abstract class AndroidGame extends Activity implements Game {
         return audio;
     }
 
+    /**
+     * Change the Current Screen that shows in the moment
+     * @param screen
+     */
     @Override
     public void setScreen(Screen screen) {
         if (screen == null)
@@ -114,6 +124,7 @@ public abstract class AndroidGame extends Activity implements Game {
     public Screen getCurrentScreen() {
         return screen;
     }
+
     Resources getRes(){
         return this.getResources();
     }

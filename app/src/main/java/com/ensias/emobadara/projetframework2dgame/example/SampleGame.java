@@ -27,6 +27,7 @@ public class SampleGame extends AndroidGame {
         Assets.imageButtonClicked=getGraphics().newImage(R.drawable.next_fr_click, Graphics.ImageFormat.ARGB8888,getResources());
 
         Assets.click = getAudio().createSound(R.raw.click1);
+        Assets.music = getAudio().createMusic(R.raw.shaunthesheep);
 
         boolean bol1=false,bol2=false,bol3=false;
         if(niveaux[0][3]==1) bol1=true;

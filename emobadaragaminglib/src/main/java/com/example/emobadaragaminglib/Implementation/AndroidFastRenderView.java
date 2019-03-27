@@ -3,19 +3,16 @@ package com.example.emobadaragaminglib.Implementation;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
-import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-
 import com.example.emobadaragaminglib.Base.Input;
-
 import java.util.List;
 
-import static android.content.ContentValues.TAG;
-
+/**
+ * This class is responsible for updating the screen
+ * It is a thread that runs after each DeltaTime
+ */
 public class AndroidFastRenderView extends SurfaceView implements Runnable {
     AndroidGame game;
     Bitmap framebuffer;

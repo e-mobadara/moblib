@@ -41,7 +41,8 @@ public class GameScreen extends Screen {
     public GameScreen(Game game,int nombreAnneauRouge,int nombreAnneauBleu,int nombreAnneauVert,boolean existRouge,boolean existBleu,boolean existvert) {
         super(game);
 
-
+        Assets.music.play();
+        Assets.music.setLooping(true);
         widthAnneau=(game.getScreenHeight()-2*padding)*2/7;
         dragedAnneau=null;
         time=0;
@@ -183,12 +184,12 @@ public class GameScreen extends Screen {
 
     @Override
     public void pause() {
-        //Assets.music.pause();
+        Assets.music.pause();
     }
 
     @Override
     public void resume() {
-        //Assets.music.play();
+        Assets.music.play();
     }
 
     @Override

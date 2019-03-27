@@ -57,7 +57,7 @@ public abstract class Screen {
             if(sprites.get(i).contain(x,y)){
                 sprites.get(i).setDragged(true);
                 draggedSprite =sprites.get(i);
-                Log.i("TOUCH_DOWN   ",sprites.get(i).getId()+"  (x,y) = "+x+"  ,  "+y);
+                Log.i("TOUCH_DOWN   ","  (x,y) = "+x+"  ,  "+y);
                 break;
             }
             else{
@@ -79,7 +79,7 @@ public abstract class Screen {
             if(sprites.get(i).contain(x,y)){
                 sprites.get(i).setDragged(false);
                 draggedSprite =null;
-                Log.i("TOUCH_UP   ",sprites.get(i).getId()+"  (x,y) = "+x+"  ,  "+y);
+                Log.i("TOUCH_UP   ","  (x,y) = "+x+"  ,  "+y);
             }
         }
     }
@@ -96,7 +96,7 @@ public abstract class Screen {
         for(int i=sprites.size()-1;i>=0;i--) {
             if(sprites.get(i).isDragged()) {
                 sprites.get(i).setPosition(x,y);
-                Log.i("DRAG   ",sprites.get(i).getId()+"  (x,y) = "+x+"  ,  "+y);
+                Log.i("DRAG   ","  (x,y) = "+x+"  ,  "+y);
             }
         }
     }

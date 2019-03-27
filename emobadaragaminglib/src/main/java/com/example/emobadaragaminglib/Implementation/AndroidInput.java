@@ -8,7 +8,10 @@ import android.view.View;
 
 import com.example.emobadaragaminglib.Base.Input;
 
-
+/**
+ * This is a Class that Handles the Touches of the User, You dont have to use this,
+ * You usually use the Abstraction provided in the Screen Class
+ */
 public class AndroidInput implements Input {
     private TouchHandler touchHandler;
 
