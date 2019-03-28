@@ -21,7 +21,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
@@ -29,11 +28,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/GameScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/Anneau.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/Anneau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/Cone.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/Cone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/ConesContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/ConesContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Screen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/ButtonUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/ButtonUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/Sprite.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,11 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameScreen.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameScreen.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="174">
+              <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,20 +63,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Screen.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Screen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
+            <state relative-caret-position="1853">
               <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/myMainActivity/MainActivity.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emobadaragaminglib/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/Sprite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
+              <folding>
+                <element signature="e#1868#1869#0" expanded="true" />
+                <element signature="e#1899#1900#0" expanded="true" />
+                <element signature="e#3748#3749#0" expanded="true" />
+                <element signature="e#3784#3785#0" expanded="true" />
+                <element signature="e#3897#3898#0" expanded="true" />
+                <element signature="e#3931#3932#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Image.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidImage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bitmap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Android/Sdk/sources/android-28/android/graphics/Bitmap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -89,7 +130,7 @@
       <file leaf-file-name="SampleGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/SampleGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="544">
               <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
             </state>
           </provider>
@@ -104,47 +145,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidAudio.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidAudio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cone.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/Cone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="41" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Anneau.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/Anneau.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ConesContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/ConesContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1318">
+            <state relative-caret-position="255">
               <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidFastRenderView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidFastRenderView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-561">
-              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -3475,7 +3480,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/SampleGame.java" />
         <option value="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/FileIO.java" />
         <option value="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Input.java" />
-        <option value="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/Sprite.java" />
         <option value="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidAudio.java" />
         <option value="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidFastRenderView.java" />
         <option value="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidFileIO.java" />
@@ -3488,13 +3492,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/Anneau.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/Cone.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/ConesContainer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/GameScreen.java" />
         <option value="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/ButtonUI.java" />
         <option value="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Screen.java" />
+        <option value="$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/Sprite.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/GameScreen.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="24" />
     <option name="width" value="1356" />
     <option name="height" value="370" />
@@ -3504,19 +3509,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
               <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
@@ -3533,41 +3533,17 @@
               <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="example" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="projetframework2dgame" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
               <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="example" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="myMainActivity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="example" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
               <item name="emobadaragaminglib" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="emobadaragaminglib" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
               <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
@@ -3579,13 +3555,6 @@
               <item name="emobadaragaminglib" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="emobadaragaminglib" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="emobadaragaminglib" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="emobadaragaminglib" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="2d-game-lib" type="1abcf292:AndroidViewProjectNode" />
@@ -3609,7 +3578,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3896,14 +3865,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="23" width="1366" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info id="Build Variants" order="2" sideWeight="0.5088889" side_tool="true" weight="0.28484848" />
+      <window_info id="Build Variants" order="2" sideWeight="0.50974023" side_tool="true" weight="0.28484848" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6980519" />
@@ -3913,13 +3882,13 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4911111" visible="true" weight="0.28484848" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.2353896" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49025974" visible="true" weight="0.28484848" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.2353896" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" weight="0.32954547" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39797395" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39772728" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -3962,11 +3931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Android/Sdk/sources/android-28/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -4006,13 +3970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-28/android/graphics/Bitmap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="909" column="25" selection-start-line="909" selection-start-column="25" selection-end-line="909" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -4070,13 +4027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="98" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -4149,9 +4099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-833">
           <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4159,13 +4106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3004">
           <caret line="234" column="7" selection-start-line="234" selection-start-column="7" selection-end-line="234" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -4218,30 +4158,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="162" column="34" selection-start-line="162" selection-start-column="34" selection-end-line="162" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidAudio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
+        <state relative-caret-position="272">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidFastRenderView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
+        <state relative-caret-position="102">
           <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/myMainActivity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="289">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
@@ -4262,8 +4195,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/Utils/ConesContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1318">
+        <state relative-caret-position="255">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/SampleGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-28/android/graphics/Bitmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Implementation/AndroidImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Components/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
+          <folding>
+            <element signature="e#1868#1869#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#3748#3749#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
+            <element signature="e#3897#3898#0" expanded="true" />
+            <element signature="e#3931#3932#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4274,27 +4266,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/SampleGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ensias/emobadara/projetframework2dgame/example/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="174">
+          <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emobadaragaminglib/src/main/java/com/example/emobadaragaminglib/Base/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
         </state>
       </provider>
     </entry>

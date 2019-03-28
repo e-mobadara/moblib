@@ -56,6 +56,7 @@ public class GameScreen extends Screen {
             for (int i=0 ;i<nombreAnneauRouge;i++){
                 anneausRouge[i]=new  Anneau(Assets.imageAnneauRouge,xAnneau,yAnneau,widthAnneau,widthAnneau,0);
                 addSprite(anneausRouge[i]);
+                anneausRouge[i].setWidth(widthAnneau/2);
             }
             Log.i("amine ","ANNEAU ROUGE CREE");
         }

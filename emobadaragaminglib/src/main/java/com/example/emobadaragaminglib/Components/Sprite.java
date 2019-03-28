@@ -165,4 +165,20 @@ public class Sprite {
     public void setY(int y) {
         this.y = y;
     }
+
+    /**
+     * Change the Height of the Image
+     * @param height
+     */
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    /**
+     * Change the Width of the image
+     * @param width
+     */
+    public void setWidth(int width) {
+        this.width = width;
+    }
 }
