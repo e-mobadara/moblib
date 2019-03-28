@@ -29,7 +29,9 @@ dependencies {
 ```
 
 ### Documentation 
-The documentation is being written now. 
+- You can find a walk-Through documentation [here](https://e-mobadara.github.io/) 
+- The code have JavaDoc to it
+- A more in depth documentation will be provided Later
 
 ### Reporting issues:
 This is a beta release, So if you did encounter a bug please open an issue in the issues Session and provide the way to reproduce the bug or a link to your project. 
