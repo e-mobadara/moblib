@@ -1,1 +1,1 @@
-include ':app', ':emobadaragaminglib'
+include ':app', ':emobadaragaminglib', ':app2'

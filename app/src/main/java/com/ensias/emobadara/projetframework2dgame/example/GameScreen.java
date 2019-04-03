@@ -148,6 +148,7 @@ public class GameScreen extends Screen {
     @Override
     public void handleDragging(int x,int y, int pointer) {
         super.handleDragging(x,y,pointer);
+
     }
 
 

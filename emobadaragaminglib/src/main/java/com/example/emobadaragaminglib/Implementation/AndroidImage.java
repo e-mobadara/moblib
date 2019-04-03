@@ -6,12 +6,17 @@ import com.example.emobadaragaminglib.Base.Image;
 import com.example.emobadaragaminglib.Base.Graphics.ImageFormat;
 
 public class AndroidImage implements Image {
-    Bitmap bitmap;
+    private Bitmap bitmap;
     private ImageFormat format;
 
     public AndroidImage(Bitmap bitmap, ImageFormat format) {
         this.bitmap = bitmap;
         this.format = format;
+    }
+
+    public AndroidImage(Bitmap bitmap){
+        this.bitmap = bitmap;
+        this.format = ImageFormat.ARGB8888;
     }
 
     @Override
