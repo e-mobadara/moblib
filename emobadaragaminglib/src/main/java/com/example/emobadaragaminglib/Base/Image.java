@@ -1,5 +1,7 @@
 package com.example.emobadaragaminglib.Base;
 
+import android.graphics.Bitmap;
+
 import com.example.emobadaragaminglib.Base.Graphics.ImageFormat;
 
 public interface Image {
@@ -15,6 +17,9 @@ public interface Image {
      */
     public int getHeight();
 
+    public Bitmap getBitmap();
+
+    public void setBitmap(Bitmap bitmap);
     /**
      * Get the Format of this image
      * @return ARGB8888, ARGB4444, RGB565

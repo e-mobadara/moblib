@@ -34,8 +34,17 @@ public class AndroidImage implements Image {
         return format;
     }
 
+    public Bitmap getBitmap() {
+        return bitmap;
+    }
+
+    public void setBitmap(Bitmap bitmap) {
+        this.bitmap = bitmap;
+    }
+
     @Override
     public void dispose() {
-        bitmap.recycle();
+        this.bitmap.recycle();
+        this.bitmap=null;
     }
 }

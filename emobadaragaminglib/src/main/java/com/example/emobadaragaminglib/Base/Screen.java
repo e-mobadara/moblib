@@ -125,7 +125,7 @@ public abstract class Screen {
     public void drawSprites(){
         //Respect the order and Draw the Sprites with their current order
         for (Sprite s:sprites) {
-            s.draw(game);
+            if(s!=null) s.draw(game);
         }
     }
 

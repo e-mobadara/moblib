@@ -12,6 +12,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Rect;
+import android.util.Log;
 
 import com.example.emobadaragaminglib.Base.Graphics;
 import com.example.emobadaragaminglib.Base.Image;
@@ -20,6 +21,7 @@ import com.example.emobadaragaminglib.Base.Image;
  * This class is responsible for drawing the sprites in your screen
  */
 public class AndroidGraphics implements Graphics {
+    public static final String TAG ="AndroidGraphics";
     private AssetManager assets;
     private Bitmap frameBuffer;
     private Canvas canvas;
@@ -75,6 +77,16 @@ public class AndroidGraphics implements Graphics {
             format = ImageFormat.ARGB8888;
 
         return new AndroidImage(bitmap, format);
+    }
+
+    /**
+     * Make an Image with  an ARGB888 Format.
+     * @param id
+     * @param res
+     * @return
+     */
+    public Image newImage(int id,Resources res){
+        return newImage(id,ImageFormat.ARGB8888,res);
     }
 
     /**
@@ -164,7 +176,7 @@ public class AndroidGraphics implements Graphics {
         dstRect.right = x + srcWidth;
         dstRect.bottom = y + srcHeight;
 
-        canvas.drawBitmap(((AndroidImage) image).bitmap, srcRect, dstRect,
+        canvas.drawBitmap(((AndroidImage) image).getBitmap(), srcRect, dstRect,
                 null);
     }
 
@@ -176,7 +188,7 @@ public class AndroidGraphics implements Graphics {
      */
     @Override
     public void drawImage(Image image, int x, int y) {
-        canvas.drawBitmap(((AndroidImage)image).bitmap, x, y, null);
+        canvas.drawBitmap(((AndroidImage)image).getBitmap(), x, y, null);
     }
 
     /**
@@ -194,7 +206,7 @@ public class AndroidGraphics implements Graphics {
 
     /**
      * Make Drawing an Image more customizable,
-     * @param Image image to draw
+     * @param image image to draw
      * @param x x-coordinate of LeftTop
      * @param y y-coordinate of LetTop
      * @param width Width
@@ -204,20 +216,21 @@ public class AndroidGraphics implements Graphics {
      * @param srcWidth width to crop
      * @param srcHeight Height to crop
      */
-    public void drawScaledImage(Image Image, int x, int y, int width, int height, int srcX, int srcY, int srcWidth, int srcHeight){
+    public void drawScaledImage(Image image, int x, int y, int width, int height, int srcX, int srcY, int srcWidth, int srcHeight){
+        Log.i(TAG, "drawScaledImage: "+ image.getBitmap());
+        if(image.getBitmap() != null) {
+            srcRect.left = srcX;
+            srcRect.top = srcY;
+            srcRect.right = srcX + srcWidth;
+            srcRect.bottom = srcY + srcHeight;
 
-        srcRect.left = srcX;
-        srcRect.top = srcY;
-        srcRect.right = srcX + srcWidth;
-        srcRect.bottom = srcY + srcHeight;
+            dstRect.left = x;
+            dstRect.top = y;
+            dstRect.right = x + width;
+            dstRect.bottom = y + height;
 
-        dstRect.left = x;
-        dstRect.top = y;
-        dstRect.right = x + width;
-        dstRect.bottom = y + height;
-
-        canvas.drawBitmap(((AndroidImage) Image).bitmap, srcRect, dstRect, null);
-
+            canvas.drawBitmap(((AndroidImage) image).getBitmap(), srcRect, dstRect, null);
+        }
     }
 
     /**
