@@ -44,7 +44,9 @@ public class AndroidImage implements Image {
 
     @Override
     public void dispose() {
-        this.bitmap.recycle();
-        this.bitmap=null;
+        if (bitmap != null && !bitmap.isRecycled()) {
+            //this.bitmap.recycle();
+            this.bitmap = null;
+        }
     }
 }

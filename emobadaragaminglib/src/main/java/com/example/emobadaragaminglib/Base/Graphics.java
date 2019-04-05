@@ -7,7 +7,7 @@ public interface Graphics {
     /**
      * For more control over your images
      */
-    public static enum ImageFormat {
+    enum ImageFormat {
         ARGB8888, ARGB4444, RGB565
     }
 
@@ -18,14 +18,14 @@ public interface Graphics {
      * @param res The resources from where to search, if you have no idea just put getGraphics()
      * @return an Image Object.
      */
-    public Image newImage(int id, ImageFormat format,Resources res);
+    Image newImage(int id, ImageFormat format,Resources res);
 
     /**
      * Hides everything from the Screen with a color
      * It doesn't dispose of your Sprites.
      * @param color
      */
-    public void clearScreen(int color);
+    void clearScreen(int color);
 
     /**
      * Draw a Line that passes from two points
@@ -35,7 +35,7 @@ public interface Graphics {
      * @param y2 y of Second Point
      * @param color Color of the Line
      */
-    public void drawLine(int x, int y, int x2, int y2, int color);
+    void drawLine(int x, int y, int x2, int y2, int color);
 
     /**
      *  Draw a Rectangle starting from its UpperLeft corner
@@ -45,7 +45,7 @@ public interface Graphics {
      * @param height Height of rectangle
      * @param color Color To fill the Rectangle
      */
-    public void drawRect(int x, int y, int width, int height, int color);
+    void drawRect(int x, int y, int width, int height, int color);
 
     /**
      * Draw Image Object
@@ -57,7 +57,7 @@ public interface Graphics {
      * @param srcWidth
      * @param srcHeight
      */
-    public void drawImage(Image image, int x, int y, int srcX, int srcY,
+    void drawImage(Image image, int x, int y, int srcX, int srcY,
                           int srcWidth, int srcHeight);
 
     /**
@@ -66,7 +66,7 @@ public interface Graphics {
      * @param x Left
      * @param y Top
      */
-    public void drawImage(Image image, int x, int y);
+    void drawImage(Image image, int x, int y);
 
     /**
      * Draw Image with Custom Width and height
@@ -76,7 +76,7 @@ public interface Graphics {
      * @param width width
      * @param height height
      */
-    public void drawImage(Image image, int x, int y,int width,int height);
+    void drawImage(Image image, int x, int y,int width,int height);
 
     /**
      * Write A text on the Screen
@@ -91,13 +91,13 @@ public interface Graphics {
      * Get Width of Device Screen
      * @return Device's Width
      */
-    public int getWidth();
+    int getWidth();
 
     /**
      * Get Height of Device Screen
      * @return Device's Height
      */
-    public int getHeight();
+    int getHeight();
 
     /**
      * Fill the current space with a color using its ARGB code
@@ -106,6 +106,6 @@ public interface Graphics {
      * @param g : green (0-255)
      * @param b : blue (0-255)
      */
-    public void drawARGB(int a, int r, int g, int b);
+    void drawARGB(int a, int r, int g, int b);
 
 }

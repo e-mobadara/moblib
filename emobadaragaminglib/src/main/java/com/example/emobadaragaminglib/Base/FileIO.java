@@ -13,7 +13,7 @@ public interface FileIO {
      * @return
      * @throws IOException
      */
-    public InputStream readFile(String file) throws IOException;
+    InputStream readFile(String file) throws IOException;
 
     /**
      * Make a file in your Android Device
@@ -21,7 +21,7 @@ public interface FileIO {
      * @return
      * @throws IOException
      */
-    public OutputStream writeFile(String file) throws IOException;
+    OutputStream writeFile(String file) throws IOException;
 
     /**
      * Reads a file from your device
@@ -29,12 +29,12 @@ public interface FileIO {
      * @return
      * @throws IOException
      */
-    public InputStream readAsset(String file) throws IOException;
+    InputStream readAsset(String file) throws IOException;
 
     /**
      * Get the Shared preferences of the App. use them to save current game state,
      * Like Current Level or current Score. So the player wont have to start all over again.
      * @return SharedPreferences
      */
-    public SharedPreferences getSharedPref();
+    SharedPreferences getSharedPref();
 }

@@ -7,55 +7,55 @@ public interface Music {
     /**
      * Start playing your Music
      */
-    public void play();
+    void play();
 
     /**
      * Stop the Current music
      */
-    public void stop();
+    void stop();
 
     /**
      * Pause the music object
      */
-    public void pause();
+    void pause();
 
     /**
      * Control the looping of music.
      * @param looping true or false
      */
-    public void setLooping(boolean looping);
+    void setLooping(boolean looping);
 
     /**
      * Volume of current music from 0 to 1
      * @param volume Percentage of volume
      */
-    public void setVolume(float volume);
+    void setVolume(float volume);
 
     /**
      * Get the current state of the music
      * @return playing state of current music
      */
-    public boolean isPlaying();
+    boolean isPlaying();
 
     /**
      * is the music Stopped
      * @return music stopped or not
      */
-    public boolean isStopped();
+    boolean isStopped();
 
     /**
      * is the Current music object looping
      * @return Looping state of the Music object
      */
-    public boolean isLooping();
+    boolean isLooping();
 
     /**
      * Dispose and free the memory occupied by the Current Music object
      */
-    public void dispose();
+    void dispose();
 
     /**
      * Replay the current music object from the start
      */
-    public void seekBegin();
+    void seekBegin();
 }

@@ -39,7 +39,7 @@ public abstract class Screen {
     public void dispose(){
         //dispose
         for (Sprite s:sprites) {
-           //s.dispose();
+           removeSprite(s);
         }
     }
 
@@ -125,7 +125,7 @@ public abstract class Screen {
     public void drawSprites(){
         //Respect the order and Draw the Sprites with their current order
         for (Sprite s:sprites) {
-            if(s!=null) s.draw(game);
+            s.draw(game);
         }
     }
 
@@ -144,5 +144,10 @@ public abstract class Screen {
      */
     public Sprite getDraggedSprite() {
         return draggedSprite;
+    }
+
+    public void removeSprite(Sprite s){
+        s.dispose();
+        sprites.remove(s);
     }
 }

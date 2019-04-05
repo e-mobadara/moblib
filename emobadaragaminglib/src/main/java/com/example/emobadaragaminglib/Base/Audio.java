@@ -10,12 +10,12 @@ public interface Audio {
      * @param idRessource R.raw.my_music
      * @return Music Object
      */
-    public Music createMusic(int idRessource);
+    Music createMusic(int idRessource);
 
     /**
      * Create a Sound object like Splash Pchaaw
      * @param idRessource R.raw.my_sound
      * @return Sound Object
      */
-    public Sound createSound(int idRessource);
+    Sound createSound(int idRessource);
 }

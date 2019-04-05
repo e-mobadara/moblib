@@ -217,7 +217,6 @@ public class AndroidGraphics implements Graphics {
      * @param srcHeight Height to crop
      */
     public void drawScaledImage(Image image, int x, int y, int width, int height, int srcX, int srcY, int srcWidth, int srcHeight){
-        Log.i(TAG, "drawScaledImage: "+ image.getBitmap());
         if(image.getBitmap() != null) {
             srcRect.left = srcX;
             srcRect.top = srcY;

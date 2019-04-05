@@ -21,8 +21,11 @@ public class Level1 extends Screen {
     public void handleTouchDown(int x, int y, int pointer) {
         super.handleTouchDown(x, y, pointer);
         Sprite s = getDraggedSprite();
-        if(s!=null)
-            s.dispose();
+        if(s!=null) {
+            removeSprite(s);
+
+        }
+
     }
 
     @Override
