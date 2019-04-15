@@ -5,8 +5,6 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-import com.example.emobadaragaminglib.Base.Graphics;
-import com.example.emobadaragaminglib.Implementation.AndroidGraphics;
 import com.example.emobadaragaminglib.Implementation.AndroidImage;
 import com.mobadara.rick.app2.R;
 import com.mobadara.rick.app2.assets.Hero;

@@ -5,6 +5,7 @@ import android.util.Log;
 import com.example.emobadaragaminglib.Components.Sprite;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.ListIterator;
 
 /**
@@ -29,18 +30,20 @@ public abstract class Screen {
     public abstract void resume();
 
     /**
-     * The Reason this Method is not doing anything is because When We dispose of the bitmaps
-     * We get the exception java.lang.RuntimeException:
-     * Canvas: trying to use a recycled bitmap android.graphics.Bitmap@d5316ab
-     * Which means we are trying to use the same resource twice. in two bitmaps.
-     * We will try to use a bitmap.copy in the future
-     * TODO: USE bitmap.copy instead of not disposing of the bitmaps.
+     * This Method is going to dispose of all the sprites that your screen is using.
+     *Caaling the garbage collector inside the while loop actually help optimizing the memo.
      */
     public void dispose(){
-        //dispose
-        for (Sprite s:sprites) {
-           removeSprite(s);
+        Iterator<Sprite> e = sprites.iterator();
+
+        while(e.hasNext()) {
+            Sprite s = e.next();
+            s.dispose();
+            e.remove();
+            System.gc();
         }
+        //Clean the memory
+
     }
 
     public abstract void backButton();
