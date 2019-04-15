@@ -24,7 +24,7 @@ allprojects {
 ### Step 2: Add the dependency
 ```
 dependencies {
-		implementation 'com.github.e-mobadara:moblib:v1.2.3'
+		implementation 'com.github.e-mobadara:moblib:v1.2.4'
 	}
 ```
 
