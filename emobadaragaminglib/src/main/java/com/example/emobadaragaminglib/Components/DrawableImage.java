@@ -1,5 +1,6 @@
 package com.example.emobadaragaminglib.Components;
 
+
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -8,6 +9,7 @@ import android.graphics.Path;
 import android.graphics.Point;
 import android.graphics.PorterDuff;
 import android.util.Log;
+
 
 import com.example.emobadaragaminglib.Base.Game;
 import com.example.emobadaragaminglib.Base.Graphics;
@@ -48,15 +50,21 @@ public class DrawableImage  {
     int colorDots=240;
     int colorDrawingArea=201;
 
-    public DrawableImage(Bitmap bitmap,DrawFinishListener mdrawFinishListener,int xImage,int yImage) {
-        this.bitmap = bitmap;
-        drawFinishListener=mdrawFinishListener;
+    public DrawableImage(Bitmap bitmap,DrawFinishListener d,int xImage,int yImage,int widthImage,int heightImage) {
+        //resize image
+        Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, widthImage, heightImage, true);
+        bitmap=resizedBitmap;
+        //
+        this.bitmap = resizedBitmap;
+        drawFinishListener=d;
         dotedPart(bitmap);
 
         this.xImage=xImage;
         this.yImage=yImage;
-        this.widthImage=bitmap.getWidth();
-        this.heightImage=bitmap.getHeight();
+        //this.widthImage=bitmap.getWidth();
+        //this.heightImage=bitmap.getHeight();
+        this.widthImage=widthImage;
+        this.heightImage=heightImage;
 
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
@@ -152,10 +160,10 @@ public class DrawableImage  {
         if (bitmap != null && x >= 0 && x < bitmap.getWidth() && y >= 0 && y < bitmap.getHeight()) {
             int pixel = bitmap.getPixel(x, y);
             if (Color.red(pixel) == colorDrawingArea && Color.red(pixel) == Color.blue(pixel) && Color.red(pixel) == Color.green(pixel)) {
-                Log.i("Touch ===", "You're in");
+                Log.e("Touch ===", "You're in");
                 canDraw = true;
             } else {
-                Log.i("Touch ===", "You're out");
+                Log.e("Touch ===", "You're out");
                 canDraw = false;
             }
         }

@@ -68,8 +68,9 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable {
             }
         ///////////////////////////////:
 
-            game.getCurrentScreen().render(deltaTime);
             game.getCurrentScreen().drawSprites();
+            game.getCurrentScreen().render(deltaTime);
+
 
             Canvas canvas = holder.lockCanvas();
             canvas.getClipBounds(dstRect);

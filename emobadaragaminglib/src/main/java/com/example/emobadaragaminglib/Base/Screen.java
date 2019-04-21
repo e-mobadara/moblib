@@ -31,7 +31,7 @@ public abstract class Screen {
 
     /**
      * This Method is going to dispose of all the sprites that your screen is using.
-     *Caaling the garbage collector inside the while loop actually help optimizing the memo.
+     *Calling the garbage collector inside the while loop actually help optimizing the memo.
      */
     public void dispose(){
         Iterator<Sprite> e = sprites.iterator();

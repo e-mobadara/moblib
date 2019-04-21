@@ -2,7 +2,6 @@ package com.example.emobadaragaminglib.Components;
 
 import com.example.emobadaragaminglib.Base.Game;
 import com.example.emobadaragaminglib.Base.Image;
-import com.example.emobadaragaminglib.Base.Screen;
 
 /**
  * Main component in this library. This is what the user can see and interact with
