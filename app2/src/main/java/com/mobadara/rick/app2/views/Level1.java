@@ -11,6 +11,9 @@ public class Level1 extends Screen {
     private Dummy mDummy2;
     public Level1(Game game) {
         super(game);
+
+        game.getGraphics().newImage()
+
         mDummy1 = new Dummy(Hero.avatar1,0,0,200,200);
         mDummy2 = new Dummy(Hero.avatar2,200,200,200,200);
         addSprite(mDummy1);
