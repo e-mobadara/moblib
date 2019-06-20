@@ -97,7 +97,7 @@ public abstract class Screen {
     public void handleDragging(int x,int y, int pointer){
         //Iterating backwards to Respect the order of sprites
         for(int i=sprites.size()-1;i>=0;i--) {
-            if(sprites.get(i).isDragged()) {
+            if(sprites.get(i).isDragged() && !sprites.get(i).isStatic()) {
                 sprites.get(i).setPosition(x,y);
                 Log.i("DRAG   ","  (x,y) = "+x+"  ,  "+y);
             }
